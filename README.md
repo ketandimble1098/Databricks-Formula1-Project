@@ -15,3 +15,9 @@ To develop a data pipeline that ingests, transforms, and analyzes raw data to ge
 - Azure Data Factory
 - Python
 - Pyspark
+
+### Results
+<img width="1075" height="841" alt="image" src="https://github.com/user-attachments/assets/f25c754a-7914-485e-95fb-7ebc2b44dca6" />
+
+<img width="1024" height="843" alt="image" src="https://github.com/user-attachments/assets/12624f61-5eb8-4d1e-bb74-f4ad9844b4a6" />
+
