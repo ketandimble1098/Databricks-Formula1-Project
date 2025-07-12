@@ -1,0 +1,172 @@
++----------------------+ 
+| List of Tables       | 
++----------------------+ 
+| circuits             | 
+| constructorResults   | 
+| constructorStandings | 
+| constructors         | 
+| driverStandings      | 
+| drivers              | 
+| lapTimes             | 
+| pitStops             | 
+| qualifying           | 
+| races                | 
+| results              | 
+| seasons              | 
++----------------------+ 
+
+circuits table
++------------+--------------+
+| Field      | Type         |
++------------+--------------+
+| circuitId  | int(11)      |
+| circuitRef | varchar(255) |
+| name       | varchar(255) |
+| location   | varchar(255) |
+| country    | varchar(255) |
+| lat        | float        |
+| lng        | float        |
+| alt        | int(11)      |
+| url        | varchar(255) |
++------------+--------------+
+
+constructor_results table
++----------------------+--------------+
+| Field                | Type         |
++----------------------+--------------+
+| constructorResultsId | int(11)      |
+| raceId               | int(11)      |
+| constructorId        | int(11)      |
+| points               | float        |
+| status               | varchar(255) |
++----------------------+--------------+
+
+constructor_standings table
++------------------------+--------------+
+| Field                  | Type         |
++------------------------+--------------+
+| constructorStandingsId | int(11)      |
+| raceId                 | int(11)      |
+| constructorId          | int(11)      |
+| points                 | float        |
+| position               | int(11)      |
+| positionText           | varchar(255) |
+| wins                   | int(11)      |
++------------------------+--------------+
+
+constructors table
++----------------+--------------+
+| Field          | Type         |
++----------------+--------------+
+| constructorId  | int(11)      |
+| constructorRef | varchar(255) |
+| name           | varchar(255) |
+| nationality    | varchar(255) |
+| url            | varchar(255) |
++----------------+--------------+
+
+driver_standings table
++-------------------+--------------+
+| Field             | Type         |
++-------------------+--------------+
+| driverStandingsId | int(11)      |
+| raceId            | int(11)      |
+| driverId          | int(11)      |
+| points            | float        |
+| position          | int(11)      |
+| positionText      | varchar(255) |
+| wins              | int(11)      |
++-------------------+--------------+
+
+drivers table
++-------------+--------------+
+| Field       | Type         |
++-------------+--------------+
+| driverId    | int(11)      |
+| driverRef   | varchar(255) |
+| number      | int(11)      |
+| code        | varchar(3)   |
+| forename    | varchar(255) |
+| surname     | varchar(255) |
+| dob         | date         |
+| nationality | varchar(255) |
+| url         | varchar(255) |
++-------------+--------------+
+
+lap_times table
++--------------+--------------+
+| Field        | Type         |
++--------------+--------------+
+| raceId       | int(11)      |
+| driverId     | int(11)      |
+| lap          | int(11)      |
+| position     | int(11)      |
+| time         | varchar(255) |
+| milliseconds | int(11)      |
++--------------+--------------+
+
+pit_stops table
++--------------+--------------+
+| Field        | Type         |
++--------------+--------------+
+| raceId       | int(11)      |
+| driverId     | int(11)      |
+| stop         | int(11)      |
+| lap          | int(11)      |
+| time         | time         |
+| duration     | varchar(255) |
+| milliseconds | int(11)      |
++--------------+--------------+
+
+qualifying table
++---------------+--------------+
+| Field         | Type         |
++---------------+--------------+
+| qualifyId     | int(11)      |
+| raceId        | int(11)      |
+| driverId      | int(11)      |
+| constructorId | int(11)      |
+| number        | int(11)      |
+| position      | int(11)      |
+| q1            | varchar(255) |
+| q2            | varchar(255) |
+| q3            | varchar(255) |
++---------------+--------------+
+
+races table
++-----------+--------------+
+| Field     | Type         |
++-----------+--------------+
+| raceId    | int(11)      |
+| year      | int(11)      |
+| round     | int(11)      |
+| circuitId | int(11)      |
+| name      | varchar(255) |
+| date      | date         |
+| time      | time         |
+| url       | varchar(255) |
++-----------+--------------+
+
+results table
++-----------------+--------------+
+| Field           | Type         |
++-----------------+--------------+
+| resultId        | int(11)      |
+| raceId          | int(11)      |
+| driverId        | int(11)      |
+| constructorId   | int(11)      |
+| number          | int(11)      |
+| grid            | int(11)      |
+| position        | int(11)      |
+| positionText    | varchar(255) |
+| positionOrder   | int(11)      |
+| points          | float        |
+| laps            | int(11)      |
+| time            | varchar(255) |
+| milliseconds    | int(11)      |
+| fastestLap      | int(11)      |
+| rank            | int(11)      |
+| fastestLapTime  | varchar(255) |
+| fastestLapSpeed | varchar(255) |
+| statusId        | int(11)      |
++-----------------+--------------+
